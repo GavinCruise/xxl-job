@@ -41,6 +41,7 @@ public class JobScheduleHelper {
             @Override
             public void run() {
 
+                //FIXME 对齐时间轮秒数
                 try {
                     TimeUnit.MILLISECONDS.sleep(5000 - System.currentTimeMillis()%1000 );
                 } catch (InterruptedException e) {
